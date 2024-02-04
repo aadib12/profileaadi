@@ -1,183 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aadi Bhardwaj's Profile</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha384-aCEwa6l8cPvcMl2zrACDD5qX8gVoTvZo9a2+A3NtAQGVaKb6kQOj8Nfdi4lA9Fk4" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 
-<style>
-  body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #3498db, #8e44ad);
-    color: #fff;
-    overflow-x: hidden;
-  }
-  
-  .container {
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  header {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 3rem;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-  
-  nav {
-    float: right;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
-  }
-  
-  nav a:hover {
-    color: #FFD700;
-  }
-  
-  main {
-    margin-top: 80px;
-    padding: 40px 20px;
-    background: linear-gradient(to right, #ecf0f1, #bdc3c7);
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-    color: #333;
-    font-size: 1.2rem;
-  }
-  
-  section {
-    margin-bottom: 40px;
-  }
-  
-  section h2 {
-    color: #8e44ad;
-    font-size: 2rem;
-    border-bottom: 2px solid #8e44ad;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-  }
-  
-  section p {
-    font-size: 1.5rem;
-    line-height: 1.6;
-    color: #333;
-  }
-  
-  footer {
-    background: rgba(255, 255, 255, 0.2);
-    color: #333;
-    text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-size: 1rem;
-  }
-  
-  footer a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  @media screen and (max-width: 768px) {
-    header {
-      padding: 15px 0;
-    }
-  
-    header h1 {
-      font-size: 2rem;
-    }
-  
-    nav {
-      float: none;
-      text-align: center;
-      margin-top: 10px;
-    }
-  
-    nav a {
-      display: block;
-      margin: 10px 0;
-      font-size: 1.2rem;
-    }
-  
-    main {
-      padding: 20px;
-    }
-  
-    section h2 {
-      font-size: 1.8rem;
-    }
-  
-    section p {
-      font-size: 1.2rem;
-    }
-  
-    footer {
-      font-size: 1rem;
-    }
-  }
-
-
-</style>
+</head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Aadi Bhardwaj</h1>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#hobbies">Hobbies</a>
-        <a href="#contact">Contact</a>
-      </nav>
+
+<header>
+    <nav>
+        <div class="logo">PortFolio</div>
+        <div class="menu">
+            <a href="#nav">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#">Contact</a>
+
+            <img src="sun.png" id="icon">
+        </div>
+    </nav>
+
+    <div class="bubbles">
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:25;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:25;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:26;"></span>
     </div>
-  </header>
-  
-  <main>
-    <section id="about" class="container">
-      <h2>About Me</h2>
-      <p>Hello! I'm Aadi Bhardwaj, currently pursuing B.Tech in the 1st year at IIIT Allahabad. I am passionate about technology and eager to learn and explore new things.</p>
-    </section>
 
-    <section id="education" class="container">
-      <h2>Education</h2>
-      <p>Bachelor of Technology (B.Tech) - 1st Year<br>Indian Institute of Information Technology, Allahabad</p>
-    </section>
-
-    <section id="hobbies" class="container">
-      <h2>Hobbies</h2>
-      <ul>
-        <li><i class="fas fa-gamepad"></i> Gaming</li>
-        <li><i class="fas fa-swimmer"></i> Swimming</li>
-        <!-- Add more hobbies with corresponding icons -->
-      </ul>
-    </section>
-  </main>
-
-  <footer>
     <div class="container">
-      <p>Contact me at <a href="mailto:aadi@example.com">aadi@example.com</a></p>
+        <div class="left"><h2>
+            Hey There! I am Aadi Bhardwaj
+        </h2>
+        <h1>
+            Student
+        </h1>
+        <P>
+            Currently pursuing IT-BI
+        </P>
+        <br><br>
+        <div>
+            <a href="#" id="hire" style="--clr:#1e9bff">Hire me</a>
+            <a href="#" id="myport">PortFolio</a>
+        </div>
     </div>
-  </footer>
+            <div class="right">
+                <img src="x" alt="">
+            </div>
+    </div>
+</header>
+
+<section id="about">
+<div class="leftbio"><img src="xx"></div>
+<div class="rightbio">
+<div>
+    <p>About Me</p>
+    <h1><span class="type">Student</span> at IIIT Allahabad</h1>
+    <p>I love web developement</p>
+    <hr>
+</div>
+
+<div class="info">
+    <div>
+        <p><b>Name:</b> Aadi Bhardwaj</p>
+        <p><b>Email:</b> aadib9424@gmail.com</p>
+    </div>
+    <div>
+        <p><b>Nationality:</b> Indian</p>
+        <p><b>Contact:</b> 910010101</p>
+    </div>
+</div>
+
+<div id="follow">
+    <p><b>Follow me on: </b>
+    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
+    <a href="www.linkedin.com/in/ aadi-bhardwaj-9b9172255" class="fa fa-linkedin"></a>
+    </p>
+
+    <div>
+        <a href="#" id="cv">Download CV</a>
+    </div>
+
+</div>
+
+</div>
+</section>
+
+<section id="skills">
+<div class="first">
+    <h1>My Skills</h1>
+    <div class="card">
+        <div class="cardbody">
+            <i class="fa fa-code"></i>
+            <h3>Programming</h3>
+            <p>Mastering languages such as C, C++, and Python, I bring versatile programming skills to tackle a wide range of challenges.</p>
+        </div>
+
+        <div class="cardbody">
+            <i class="fa fa-code"></i>
+            <h3>Web Developement</h3>
+            <p>
+                Crafting dynamic and user-centric web solutions, seamlessly blending aesthetics and functionality.</p>
+        </div>
+
+        <div class="cardbody">
+            <i class="fa fa-code"></i>
+            <h3>Problem Solving</h3>
+            <p>Navigating complex challenges with analytical finesse, employing strategic problem-solving skills for optimal solutions.</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="cardbody">
+            <i class="fa fa-code"></i>
+            <h3>Communication Skills</h3>
+            <p>
+                Articulating ideas with clarity and finesse, my communication skills transcend coding languages, fostering effective collaboration.</p>
+        </div>
+
+        <div class="cardbody">
+            <i class="fa fa-code"></i>
+            <h3>Time Management</h3>
+            <p>
+                Mastering the art of time management, I ensure prompt project delivery without compromising on quality.</p>
+        </div>
+
+        <div class="cardbody">
+            <i class="fa fa-code"></i>
+            <h3>Presentation Skills</h3>
+            <p>I can program in various lamguages such as C, C++ and Python</p>
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="achievements">
+    <div class="first">
+        <h1>My Achievements</h1>
+        <div class="card">
+            <div class="cardbody cardimg">
+                <img src="xx">
+            </div>
+    
+            <div class="cardbody cardimg">
+                <img src="xx">
+            </div>
+    
+            <div class="cardbody cardimg">
+                <img src="xx">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cardbody cardimg">
+                <img src="xx">
+            </div>
+    
+            <div class="cardbody cardimg">
+                <img src="xx">
+            </div>
+    
+            <div class="cardbody cardimg">
+                <img src="xx">
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+<section class="contact">
+    <div class="container1">
+        <h2>Connect with me!</h2>
+        <div class="cont-wrapper">
+            <div class="cont-form">
+                <h3>Drop a message</h3>
+                <form>
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your email">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your message"></textarea>
+                    </div>
+                    <button type="submit">Send message</button>
+                </form>
+            </div>
+            <div class="cont-info">
+                <h3>Contact information</h3>
+                <p><i class="fa fa-phone"></i> 982443223</p>
+                <p><i class="fa fa-envelope"></i>aadib9424@gmail.com</p>
+                <p><i class="fa fa-map-marker"></i>IIIT Allahabad, UP</p>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<footer>
+    Credits: Aadi Bhardwaj
+</footer>
+
+<script>
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+        document.body.classList.toggle("light-theme");
+        if(document.body.classList.contains("light-theme")){
+            icon.src = "moon.png"
+        }
+        else{
+            icon.src = "sun.png"
+        }
+
+    }
+</script>
+
+
 </body>
 </html>
