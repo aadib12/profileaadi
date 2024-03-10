@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Ojuju:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="tip.js">
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>TIP CALCULATOR</h1>
+        <div class="wrapper">
+
+            <p>Bill Amount</p>
+            <input type="text" id="amount" placeholder="Amount to be paid"> ₹
+            <p>How was the service ?</p>
+            <select id="services">
+                <option>
+                    Select
+                </option>
+                <option value="0.25">25% - Top Notch</option>
+                <option value="0.20">20% - Excellent</option>
+                <option value="0.15">15% - Good</option>
+                <option value="0.10">10% - Bad</option>
+                <option value="0.05">5% - Worst</option>
+            </select>
+            <p>Total number of persons</p>
+            <input type="text" id="persons" placeholder="Number of people sharing the bill">
+            <button id="calculate" onclick="calculateTip()">Calculate</button>
+            <button id="clear" onclick="clearMe()">Clear</button>
+
+        </div>
+
+        <div class="tip">
+            <p>Tip Amount</p>
+            <span id="total">0</span>₹
+            <span id="each">each</span>
+        </div>
+    </div>
+</body>
+
+</html>

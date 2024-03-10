@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+   position: relative;
+   height: 100vh;
+   overflow: hidden;
+  }
+  
+  .parallax-container {
+    width: 110%;
+    height: 110%;
+    background: url("https://cdn.pixabay.com/photo/2019/12/10/10/53/architecture-4685608_960_720.jpg") center center / cover no-repeat;
+    position: absolute;
+    left: -10%;
+    top: -10%;
+  }
+  
+  .parallax-content {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    text-shadow: -5px 10px 15px black;
+    letter-spacing: 2px;
+    position: absolute;
+    top: calc(50% - 5rem);
+    left: calc(50% - 5rem);
+    cursor: pointer;
+  }
