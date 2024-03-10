@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="task.css">
+    <script src="task.js"></script>
+</head>
+
+<body>
+    <h2>TASK TRACKER</h2>
+    <div class="container">
+
+        <div class="left">
+            <u>Upcoming Tasks</u>
+            <p id="upcoming">
+                Clean dishes
+                <br>
+                <br>
+            </p>
+        </div>
+
+        <div class="middle">
+            <u>Ongoing Tasks</u>
+            <p id="ongoing">
+                Laundry
+                <br>
+                <br>
+            </p>
+        </div>
+
+        <div class="right">
+            <u>Schedule a Task</u>
+            <br>
+            <br>
+            <br>
+            <div class="input-container">
+                <input type="text" placeholder="Enter task" id="add">
+                <br>
+                <button type="button" onclick="add()">ADD TASK</button>
+                <br>
+            </div>
+
+            <div class="input-container">
+                <input type="text" placeholder="Remove task" id="del">
+                <button type="button" onclick="removeTask()">REMOVE TASK</button>
+            </div>
+
+            <p id="schedule"></p>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modified Navigation Bar</title>
+    <style>
+        article {
+            position: fixed;
+            margin-left: 10px;
+        }
+
+        #navlist {
+            background-color: #4CAF50;
+            position: fixed;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -60px;
+            width: auto;
+            display: block;
+            transition: top 0.3s;
+        }
+
+        #navlist a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        #navlist a:hover {
+            background-color: #45a049; 
+            color: white;
+        }
+
+        article p {
+            color: #333; 
+            font-size: 16px; 
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <h1 style="color: #2E86C1;">My Website</h1>
+        <b>Your Slogan Here</b>
+        <p>Hello! I'm Aadi, a second-semester first-year student pursuing IT at IIIT Allahabad. I'm passionate about exploring the vast world of technology and honing my skills in programming and problem-solving. Excited to engage with the dynamic academic environment and contribute to the vibrant community at IIIT Allahabad.</p>
+    </article>
+
+    <div id="navlist">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="scrollable" style="padding: 15px 15px 4500px;"></div>
+
+    <script>
+
+        window.onscroll = function () {
+            scroll()
+        };
+
+        function scroll() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("navlist").style.top = "0";
+            } else {
+                document.getElementById("navlist").style.top = "-60px";
+            }
+        }
+    </script>
+</body>
+
+</html>
