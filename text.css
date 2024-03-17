@@ -22,7 +22,7 @@ body {
 	justify-content: center;
 	flex-direction: column;
 	text-align: center;
-	color: #fff;
+	color: black;
 }
 
 .headings-container {
@@ -59,7 +59,7 @@ body {
 	padding: 0.8rem;
 	border: 1px solid transparent;
 	border-radius: 10px;
-	color: #fff;
+	color: black;
 	cursor: pointer;
 	transition: all 0.25s;
 }
